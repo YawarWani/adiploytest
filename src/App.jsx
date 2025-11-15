@@ -13,7 +13,7 @@ export default function App() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/save-name", {
+      const res = await fetch("https://backend-s8cn.onrender.com/save-name", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
