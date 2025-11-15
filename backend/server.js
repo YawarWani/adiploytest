@@ -25,7 +25,7 @@ app.post("/save-name", (req, res) => {
   db.query(query, [name], (err, result) => {
     if (err) {
         console.log(err)
-        return res.status(500).json({ error: err });
+        return res.status(500).json({ error: "ye h error" });
     }
 console.log(result.insertId)
     res.json({ message: "Name saved!", id: result.insertId });
