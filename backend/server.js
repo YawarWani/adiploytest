@@ -15,7 +15,7 @@ const db = mysql.createConnection({
   password: process.env.AIVEN_PASSWORD,
   database: process.env.AIVEN_DB,
   ssl: {
-    rejectUnauthorized: true  // Aiven requires SSL
+    rejectUnauthorized: true
   }
 });
 
